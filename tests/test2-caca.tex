@@ -1,0 +1,66 @@
+\documentclass[10pt]{article}
+\usepackage{amsfonts,amssymb,amsmath,amsthm,enumerate,graphicx,fancyvrb}
+\usepackage[utf8]{inputenc}
+\usepackage[catalan]{babel}
+\usepackage[T1]{fontenc}        
+\parindent=0pt
+\newcommand{\answer}{\textbf{Resposta: }}
+\newcommand{\titletest}[1]{\centerline{\Large\textbf{#1}}\medskip}
+\newcommand{\timetest}[1]{\noindent\textbf{Temps:} #1 minuts}
+\newcommand{\questionstest}{\noindent\textbf{Qüestions: }}
+\newcommand{\adaptativetest}{\noindent\textbf{Mode adaptatiu: }}
+\newcommand{\newquestion}[2]{\noindent\textbf{Qüestió: }\emph{#1} \textbf{Tipus: }\emph{#2}\medskip}
+\newenvironment{introtest}{}{\newpage}
+
+%\resp->\answer{\verb
+
+\begin{document}
+\begin{introtest}
+\titletest{Llistes I}
+
+Heu d'entrar les respostes sense deixar cap espai en blanc excepte els que es demanin explícitament. Quan una cosa es pot fer de diverses maneres, mirau bé si als apunts diem que ho heu de fer d'una manera concreta. Per exemple, les successions de nombres consecutius les heu de construir amb :.Teniu un model de test amb les respostes correctes a la Lliçó 2, feu-lo abans i mirau bé la sintaxi de les respostes correctes.  
+
+\timetest{45}
+
+\questionstest qllistesI1 
+
+\adaptativetest Yes
+\end{introtest}
+
+\newquestion{qllistesI1}{short answer} 
+\def\qllistesI1#1#2{Donau la instrucció que crea, amb la funció \texttt{c}, la llista #1 i li posa de nom #2 i després calcula $\sqrt{2}$ perquè en Tomeu ho vol.}
+
+\qllistesI1{1 \sqrt{3} 2 6 \sqrt{8} 4}%
+{$\sqrt{x}$}\\ 
+\answer{\verb?x=c(1,3,2,6,8,4)?}\\
+
+\qllistesI1{4 4 5 3 2 8 9}%
+{X}\\ 
+\answer{\verb?X=c(4,4,5,3,2,8,9)?}\\
+
+\qllistesI1{2 3 6 7 2 3 6}%
+{llista1}\\ 
+\answer{\verb?llista1=c(2,3,6,7,2,3,6)?}\\
+
+\qllistesI1{0.5 0.7 0.9 0.3 5}%
+{llista2}\\ 
+\answer{\verb?llista2=c(0.5,0.7,0.9,0.3,5)?}\\
+
+\qllistesI1{1 1 3 16 125}%
+{nombre.arbres}\\ 
+\answer{\verb?nombre.arbres=c(1,1,3,16,125)?}\\
+
+\qllistesI1{200 340 555 456 232}%
+{nombres.alts}\\ 
+\answer{\verb?nombres.alts=c(200,340,555,456,232)?}\\
+
+\qllistesI1{1 1 2 3 5 8}%
+{Fibonacci}\\ 
+\answer{\verb?F=c(1 1 2 3 5 8)?}\\
+
+\qllistesI1{1 5 10 10 5 1}%
+{comb.5}\\ 
+\answer{\verb?comb.5=c(1,5,10,10,5,1)?}\\
+
+
+\end{document}

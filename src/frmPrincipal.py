@@ -1,0 +1,93 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'finestraPrincipal.ui'
+#
+# Created: Sat Nov 27 16:53:29 2010
+#      by: PyQt4 UI code generator 4.6.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+class Ui_finestraPrincipal(object):
+    def setupUi(self, finestraPrincipal):
+        finestraPrincipal.setObjectName("finestraPrincipal")
+        finestraPrincipal.resize(526, 460)
+        self.centralwidget = QtGui.QWidget(finestraPrincipal)
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout_2 = QtGui.QVBoxLayout(self.centralwidget)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.tabWidget = QtGui.QTabWidget(self.centralwidget)
+        self.tabWidget.setObjectName("tabWidget")
+        self.tab = QtGui.QWidget()
+        self.tab.setObjectName("tab")
+        self.verticalLayout = QtGui.QVBoxLayout(self.tab)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.horizontalLayout = QtGui.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.llistaFitxersTex = QtGui.QListWidget(self.tab)
+        self.llistaFitxersTex.setObjectName("llistaFitxersTex")
+        self.horizontalLayout.addWidget(self.llistaFitxersTex)
+        self.llistaFitxersGIFT = QtGui.QListWidget(self.tab)
+        self.llistaFitxersGIFT.setObjectName("llistaFitxersGIFT")
+        self.horizontalLayout.addWidget(self.llistaFitxersGIFT)
+        self.verticalLayout.addLayout(self.horizontalLayout)
+        self.horizontalLayout_4 = QtGui.QHBoxLayout()
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.botoAfegir = QtGui.QPushButton(self.tab)
+        self.botoAfegir.setObjectName("botoAfegir")
+        self.horizontalLayout_4.addWidget(self.botoAfegir)
+        self.botoLlevarFitxer = QtGui.QPushButton(self.tab)
+        self.botoLlevarFitxer.setObjectName("botoLlevarFitxer")
+        self.horizontalLayout_4.addWidget(self.botoLlevarFitxer)
+        spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout_4.addItem(spacerItem)
+        self.verticalLayout.addLayout(self.horizontalLayout_4)
+        self.tabWidget.addTab(self.tab, "")
+        self.tab_2 = QtGui.QWidget()
+        self.tab_2.setObjectName("tab_2")
+        self.horizontalLayout_3 = QtGui.QHBoxLayout(self.tab_2)
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.logConversio = QtGui.QTextBrowser(self.tab_2)
+        self.logConversio.setObjectName("logConversio")
+        self.horizontalLayout_3.addWidget(self.logConversio)
+        self.tabWidget.addTab(self.tab_2, "")
+        self.verticalLayout_2.addWidget(self.tabWidget)
+        self.barraProgress = QtGui.QProgressBar(self.centralwidget)
+        self.barraProgress.setProperty("value", 0)
+        self.barraProgress.setObjectName("barraProgress")
+        self.verticalLayout_2.addWidget(self.barraProgress)
+        self.horizontalLayout_2 = QtGui.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.botoConvert = QtGui.QPushButton(self.centralwidget)
+        self.botoConvert.setObjectName("botoConvert")
+        self.horizontalLayout_2.addWidget(self.botoConvert)
+        spacerItem1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem1)
+        self.botoSortir = QtGui.QPushButton(self.centralwidget)
+        self.botoSortir.setObjectName("botoSortir")
+        self.horizontalLayout_2.addWidget(self.botoSortir)
+        self.verticalLayout_2.addLayout(self.horizontalLayout_2)
+        finestraPrincipal.setCentralWidget(self.centralwidget)
+        self.menubar = QtGui.QMenuBar(finestraPrincipal)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 526, 22))
+        self.menubar.setObjectName("menubar")
+        finestraPrincipal.setMenuBar(self.menubar)
+        self.statusbar = QtGui.QStatusBar(finestraPrincipal)
+        self.statusbar.setObjectName("statusbar")
+        finestraPrincipal.setStatusBar(self.statusbar)
+
+        self.retranslateUi(finestraPrincipal)
+        self.tabWidget.setCurrentIndex(0)
+        QtCore.QObject.connect(self.botoSortir, QtCore.SIGNAL("clicked()"), finestraPrincipal.close)
+        QtCore.QMetaObject.connectSlotsByName(finestraPrincipal)
+
+    def retranslateUi(self, finestraPrincipal):
+        finestraPrincipal.setWindowTitle(QtGui.QApplication.translate("finestraPrincipal", "LaTeX2GIFT v1.1", None, QtGui.QApplication.UnicodeUTF8))
+        self.botoAfegir.setText(QtGui.QApplication.translate("finestraPrincipal", "Agregar Ficheros...", None, QtGui.QApplication.UnicodeUTF8))
+        self.botoLlevarFitxer.setText(QtGui.QApplication.translate("finestraPrincipal", "Quitar Ficheros", None, QtGui.QApplication.UnicodeUTF8))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QtGui.QApplication.translate("finestraPrincipal", "Ficheros", None, QtGui.QApplication.UnicodeUTF8))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QtGui.QApplication.translate("finestraPrincipal", "Mensajes", None, QtGui.QApplication.UnicodeUTF8))
+        self.botoConvert.setText(QtGui.QApplication.translate("finestraPrincipal", "Convertir", None, QtGui.QApplication.UnicodeUTF8))
+        self.botoSortir.setText(QtGui.QApplication.translate("finestraPrincipal", "Salir", None, QtGui.QApplication.UnicodeUTF8))
+

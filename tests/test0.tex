@@ -1,0 +1,156 @@
+\documentclass[10pt]{article}
+\usepackage{amsfonts,amssymb,amsmath,amsthm,enumerate,graphicx,fancyvrb}
+\usepackage[utf8]{inputenc}
+\usepackage[catalan]{babel}
+\usepackage[T1]{fontenc}        
+
+\advance\hoffset by -0.8in
+\advance\textwidth by 1.7in
+\advance\voffset by -0.3in
+\advance\textheight by 0.6in
+\parskip= 1 ex
+\parindent = 0pt
+\baselineskip= 13pt
+
+\newcommand{\answer}{\textbf{Resposta: }}
+\newcommand{\titletest}[1]{\centerline{\Large\textbf{#1}}\medskip}
+\newcommand{\timetest}[1]{\noindent\textbf{Temps:} #1 minuts}
+\newcommand{\questionstest}{\noindent\textbf{Qüestions: }}
+\newcommand{\adaptativetest}{\noindent\textbf{Mode adaptatiu: }}
+\newcommand{\newquestion}[2]{\noindent\textbf{Qüestió: }\emph{#1} \textbf{Tipus: }\emph{#2}\medskip}
+\newenvironment{introtest}{}{\newpage}
+\newcommand{\transw}{\hspace*{1cm} Vertadera}
+\newcommand{\namequestion}{}
+
+%\resp->\answer{\verb
+
+\begin{document}
+\begin{introtest}
+\titletest{Introducció}
+
+Heu d'entrar les respostes sense deixar cap espai en blanc excepte els que es demanin explícitament.  Teniu un model de test amb les respostes correctes a la Lliçó 0, feu-lo abans i mirau bé la sintaxi de les respostes correctes.  
+
+\timetest{10}
+
+\questionstest qintro1 qintro2
+
+\adaptativetest Yes
+\end{introtest}
+
+\newquestion{qintro1}{short answer} 
+\def\qintro1#1{Escriviu una instrucció que demani tota la informació sobre #1 i a continuació, separada per un espai en blanc, copiau exactament (respectant majúscules i minúscules) la primera paraula del resultat que ha donat R.}
+
+\namequestion{qintr1-01}
+\qintro1{la funció exp}\\ 
+\answer{\verb?help("exp") log?}\\
+
+\namequestion{qintr1-02}
+\qintro1{la funció log}\\ 
+\answer{\verb?help("log") log?}\\
+
+\namequestion{qintr1-03}
+\qintro1{la funció length}\\ 
+\answer{\verb?help("length") length?}\\
+
+\namequestion{qintr1-04}
+\qintro1{la funció tan}\\ 
+\answer{\verb?help("tan") Trig?}\\
+
+\namequestion{qintr1-05}
+\qintro1{la funció sin}\\ 
+\answer{\verb?help("sin") Trig?}\\
+
+\namequestion{qintr1-06}
+\qintro1{la funció sum}\\ 
+\answer{\verb?help("sum") sum?}\\
+
+\namequestion{qintr1-07}
+\qintro1{la funció mean}\\ 
+\answer{\verb?help("mean") mean?}\\
+
+\namequestion{qintr1-08}
+\qintro1{la funció max}\\ 
+\answer{\verb?help("max") Extremes?}\\
+
+\namequestion{qintr1-09}
+\qintro1{el símbol $*$}\\ 
+\answer{\verb?help("*") Arithmetic?}\\
+
+\namequestion{qintr1-10}
+\qintro1{el símbol [}\\ 
+\answer{\verb?help("[") Extract?}\\
+
+\namequestion{qintr1-11}
+\qintro1{el símbol /}\\ 
+\answer{\verb?help("/") Arithmetic?}\\
+
+\namequestion{qintr1-12}
+\qintro1{el símbol -}\\ 
+\answer{\verb?help("-") Arithmetic?}\\
+
+\namequestion{qintr1-13}
+\qintro1{el símbol <}\\ 
+\answer{\verb?help("<") Comparison?}\\
+
+\namequestion{qintr1-14}
+\qintro1{el símbol >}\\ 
+\answer{\verb?help(">") Comparison?}\\
+
+\newpage
+
+\newquestion{qintro2}{short answer} 
+\def\qintro2#1{Escriviu una instrucció que demani un exemple d'ús (però no tota la resta d'informació) #1 i a continuació, separada per un espai en blanc, copiau exactament la primera paraula del resultat que ha donat R (pot tenir símbols que no siguin lletres; de fet, pot no tenir ni lletres).}
+
+\namequestion{qintr2-01}
+\qintro2{de la funció exp}\\ 
+\answer{\verb?example("exp") exp>?}\\
+
+\namequestion{qintr2-02}
+\qintro2{de la funció log}\\ 
+\answer{\verb?example("log") log>?}\\
+
+\namequestion{qintr2-03}
+\qintro2{de la funció length}\\ 
+\answer{\verb?example("length") length>?}\\
+
+\namequestion{qintr2-04}
+\qintro2{de la funció max}\\ 
+\answer{\verb?example("max") max>?}\\
+
+\namequestion{qintr2-05}
+\qintro2{de la funció abs}\\ 
+\answer{\verb?example("abs") abs>?}\\
+
+\namequestion{qintr2-06}
+\qintro2{de la funció plot}\\ 
+\answer{\verb?example("plot") plot>?}\\
+
+\namequestion{qintr2-07}
+\qintro2{de la funció round}\\ 
+\answer{\verb?example("round") round>?}\\
+
+\namequestion{qintr2-08}
+\qintro2{de la funció sample}\\ 
+\answer{\verb?example("sample") sample>?}\\
+
+\namequestion{qintr2-09}
+\qintro2{de l'operador $*$}\\ 
+\answer{\verb?example("*") *>?}\\
+
+\namequestion{qintr2-10}
+\qintro2{de l'operador $/$}\\ 
+\answer{\verb?example("/") />?}\\
+
+\namequestion{qintr2-11}
+\qintro2{del símbol $[$}\\ 
+\answer{\verb?example("[") ?>?}\\
+
+\namequestion{qintr2-12}
+\qintro2{del símbol $>$}\\ 
+\answer{\verb?example(">") >>?}\\
+
+\namequestion{qintr2-13}
+\qintro2{del símbol $<$}\\ 
+\answer{\verb?example("<") <>?}\\
+
+\end{document}

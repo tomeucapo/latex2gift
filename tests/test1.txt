@@ -1,0 +1,227 @@
+$CATEGORY: La calculadora
+
+$CATEGORY: La calculadora/qcalculadora3
+
+::qcalculadora3-01::Donau una expressió per calcular $$3\cos(50^\{\mathrm\{o\}\})$$, emprant la construcció donada a les notes per calcular funcions trigonomètriques en graus, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=3*cos(50*pi/180) 1.928363
+}
+
+::qcalculadora3-02::Donau una expressió per calcular $$\cos(35^\{\mathrm\{o\}\})^2$$, emprant la construcció donada a les notes per calcular funcions trigonomètriques en graus, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=cos(35*pi/180)^2 0.6710101
+}
+
+::qcalculadora3-03::Donau una expressió per calcular $$3\tan(50^\{\mathrm\{o\}\})$$, emprant la construcció donada a les notes per calcular funcions trigonomètriques en graus, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=3*tan(50*pi/180) 3.575261
+}
+
+::qcalculadora3-04::Donau una expressió per calcular $$\tan(35^\{\mathrm\{o\}\})^2$$, emprant la construcció donada a les notes per calcular funcions trigonomètriques en graus, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=tan(35*pi/180)^2 0.4902906
+}
+
+::qcalculadora3-05::Donau una expressió per calcular $$3\sin(50^\{\mathrm\{o\}\})$$, emprant la construcció donada a les notes per calcular funcions trigonomètriques en graus, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=3*sin(50*pi/180) 2.298133
+}
+
+::qcalculadora3-06::Donau una expressió per calcular $$\sin(35^\{\mathrm\{o\}\})^2$$, emprant la construcció donada a les notes per calcular funcions trigonomètriques en graus, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=sin(35*pi/180)^2 0.3289899
+}
+
+::qcalculadora3-07::Donau una expressió per calcular $$\sin(10^\{\mathrm\{o\}\})+\cos(10^\{\mathrm\{o\}\})$$, emprant la construcció donada a les notes per calcular funcions trigonomètriques en graus, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=sin(10*pi/180)+cos(10*pi/180) 1.158456
+}
+
+::qcalculadora3-08::Donau una expressió per calcular $$3\cos(-50^\{\mathrm\{o\}\})$$, emprant la construcció donada a les notes per calcular funcions trigonomètriques en graus, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=3*cos(-50*pi/180) 1.928363
+}
+
+$CATEGORY: La calculadora/qcalculadora2
+
+::qcalculadora2-01::Donau una expressió per calcular $$\ln(|e^3-\sqrt[3]\{300\}|)$$,  amb les operacions i funcions escrites exactament en l'ordre donat, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=log(abs(exp(3)-300^(1/3))) 2.594598
+}
+
+::qcalculadora2-02::Donau una expressió per calcular $$\log_\{10\}(|\sin(e^2)|)$$,  amb les operacions i funcions escrites exactament en l'ordre donat, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=log10(abs(sin(exp(2)))) -0.04873295
+	=log(abs(sin(exp(2))),10) -0.04873295
+}
+
+::qcalculadora2-03::Donau una expressió per calcular $$e^\{\arctan(5!)\}$$,  amb les operacions i funcions escrites exactament en l'ordre donat, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=exp(atan(factorial(5))) 4.770558
+}
+
+::qcalculadora2-04::Donau una expressió per calcular $$\sqrt\{|\sin(2)|+1\}-\sqrt[3]\{\sin(2)\}$$,  amb les operacions i funcions escrites exactament en l'ordre donat, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=sqrt(abs(sin(2))+1)-sin(2)^(1/3) 0.4129706
+	=(abs(sin(2))+1)^(1/2)-sin(2)^(1/3) -0.01523177
+}
+
+::qcalculadora2-05::Donau una expressió per calcular $$4!\cdot \binom\{7\}\{4\}-e^5$$,  amb les operacions i funcions escrites exactament en l'ordre donat, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=factorial(4)*choose(7,4)-exp(5) 691.5868
+}
+
+::qcalculadora2-06::Donau una expressió per calcular $$\sin(\arccos(0.3))-\cos(arcsin(0.3))$$,  amb les operacions i funcions escrites exactament en l'ordre donat, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=sin(acos(0.3))-cos(asin(0.3)) 0
+}
+
+::qcalculadora2-07::Donau una expressió per calcular $$\sqrt\{|\log_\{2\}(e^\{-0.7\})|\}$$,  amb les operacions i funcions escrites exactament en l'ordre donat, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=abs(log(exp(-0.7),2))^(1/2) 1.004931
+	=sqrt(abs(log(exp(-0.7),2)) 1.004931
+}
+
+::qcalculadora2-08::Donau una expressió per calcular $$\ln(|\arctan(e^5)|)$$,  amb les operacions i funcions escrites exactament en l'ordre donat, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=log(abs(atan(exp(5)))) 0.447284
+}
+
+$CATEGORY: La calculadora/qcalculadora1
+
+::qcalculadora1-01::Donau una expressió per calcular $$3(5+2.5)+3^\{1.5\}+7!-\frac\{2\}\{3\}$$,  amb les operacions escrites exactament en l'ordre donat, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=3*(5+2.5)+3^1.5+factorial(7)-2/3 5067.029
+}
+
+::qcalculadora1-02::Donau una expressió per calcular $$2.5-3(7!+1)+5\cdot 1.5^6$$,  amb les operacions escrites exactament en l'ordre donat, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=2.5-3*(factorial(7)+1)+5*1.5^6 -15063.55
+}
+
+::qcalculadora1-03::Donau una expressió per calcular $$\frac\{5\}\{3\}\cdot 2^5-7!+2^\{10\}$$,  amb les operacions escrites exactament en l'ordre donat, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=(5/3)*2^5-factorial(7)+2^10 -3962.667
+	=5/3*2^5-factorial(7)+2^10 -3962.667
+}
+
+::qcalculadora1-04::Donau una expressió per calcular $$1.5^\{-3\}-(2+(-1)^5)\frac\{2^7\}\{7!\}$$,  amb les operacions escrites exactament en l'ordre donat, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=1.5^(-3)-(2+(-1)^5)*2^7/factorial(7) 0.2708995
+	=1.5^(-3)-(2+(-1)^5)*(2^7/factorial(7)) 0.2708995
+}
+
+::qcalculadora1-05::Donau una expressió per calcular $$2(3^5+(-3)^\{-5\})-\frac\{6!\}\{500\}$$,  amb les operacions escrites exactament en l'ordre donat, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=2*(3^5+(-3)^(-5))-factorial(6)/500 484.5518
+}
+
+::qcalculadora1-06::Donau una expressió per calcular $$7^3-6!\cdot( \frac\{3\}\{5+6!\})$$,  amb les operacions escrites exactament en l'ordre donat, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=7^3-factorial(6)*(3/(5+factorial(6))) 340.0207
+	=7^3-factorial(6)*3/(5+factorial(6)) 340.0207
+}
+
+::qcalculadora1-07::Donau una expressió per calcular $$\frac\{5\}\{234\}+ 3(10!- 2^\{10\})$$,  amb les operacions escrites exactament en l'ordre donat, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=5/234+3*(factorial(10)-2^10) 10883328
+}
+
+::qcalculadora1-08::Donau una expressió per calcular $$2.5^\{-3\}-(2+(-1.5)^8)\frac\{7!\}\{3^7\}$$,  amb les operacions escrites exactament en l'ordre donat, i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=2.5^(-3)-(2+(-1.5)^8)*factorial(7)/3^7 -63.60755
+	=2.5^(-3)-(2+(-1.5)^8)*(factorial(7)/3^7) -63.60755
+}
+
+$CATEGORY: La calculadora/qcalculadora6
+
+::qcalculadora6-01::En una sola línia, assignau el nom $$x$$ al nombre $$\sin(0.63\pi)\}\{\sqrt\{2\}\}\{e^\{x y\}$$, el nom $$y$$ a $$#2$$ i calculau $$#3$$; separau les instruccions amb punts i comes seguits d'un espai en blanc. A continuació, separat per un espai en blanc (sense punt i coma), escriviu el resultat que ha donat R en avaluar aquesta seqüència d'instruccions. {
+	=x\=sin(0.63*pi); y\=sqrt(2); exp(x*y) 3.661603
+	=x\=sin(0.63*pi); y\=2^(1/2); exp(x*y) 3.661603
+}
+
+::qcalculadora6-02::En una sola línia, assignau el nom $$x$$ al nombre $$\cos(0.53\pi)\}\{\sqrt\{3\}\}\{e^\{x+y\}$$, el nom $$y$$ a $$#2$$ i calculau $$#3$$; separau les instruccions amb punts i comes seguits d'un espai en blanc. A continuació, separat per un espai en blanc (sense punt i coma), escriviu el resultat que ha donat R en avaluar aquesta seqüència d'instruccions. {
+	=x\=cos(0.53*pi); y\=sqrt(3); exp(x+y) 5.144574
+	=x\=cos(0.53*pi); y\=3^(1/2); exp(x+y) 5.144574
+}
+
+::qcalculadora6-03::En una sola línia, assignau el nom $$x$$ al nombre $$\cos(0.78\pi)\}\{\sqrt\{0.2\}\}\{e^\{2x+y\}$$, el nom $$y$$ a $$#2$$ i calculau $$#3$$; separau les instruccions amb punts i comes seguits d'un espai en blanc. A continuació, separat per un espai en blanc (sense punt i coma), escriviu el resultat que ha donat R en avaluar aquesta seqüència d'instruccions. {
+	=x\=cos(0.78*pi); y\=sqrt(0.2); exp(2*x+y) 0.334937
+	=x\=cos(0.78*pi); y\=0.2^(1/2); exp(2*x+y) 0.334937
+}
+
+::qcalculadora6-04::En una sola línia, assignau el nom $$x$$ al nombre $$\cos(-2.3\pi)\}\{\sqrt\{0.3\}\}\{e^\{x+2y\}$$, el nom $$y$$ a $$#2$$ i calculau $$#3$$; separau les instruccions amb punts i comes seguits d'un espai en blanc. A continuació, separat per un espai en blanc (sense punt i coma), escriviu el resultat que ha donat R en avaluar aquesta seqüència d'instruccions. {
+	=x\=cos(-2.3*pi); y\=sqrt(0.3); exp(x+2*y) 5.382917
+	=x\=cos(-2.3*pi); y\=0.3^(1/2); exp(x+2*y) 5.382917
+}
+
+::qcalculadora6-05::En una sola línia, assignau el nom $$x$$ al nombre $$\tan(-5.7\pi)\}\{\sqrt\{5\}\}\{e^\{x-y\}$$, el nom $$y$$ a $$#2$$ i calculau $$#3$$; separau les instruccions amb punts i comes seguits d'un espai en blanc. A continuació, separat per un espai en blanc (sense punt i coma), escriviu el resultat que ha donat R en avaluar aquesta seqüència d'instruccions. {
+	=x\=tan(-5.7*pi); y\=sqrt(5); exp(x-y) 0.4232950
+	=x\=tan(-5.7*pi); y\=5^(1/2); exp(x-y) 0.4232950
+}
+
+::qcalculadora6-06::En una sola línia, assignau el nom $$x$$ al nombre $$\sin(-4.7\pi)\}\{\sqrt\{0.5\}\}\{e^\{y-x\}$$, el nom $$y$$ a $$#2$$ i calculau $$#3$$; separau les instruccions amb punts i comes seguits d'un espai en blanc. A continuació, separat per un espai en blanc (sense punt i coma), escriviu el resultat que ha donat R en avaluar aquesta seqüència d'instruccions. {
+	=x\=sin(-4.7*pi); y\=sqrt(0.5); exp(y-x) 4.554537
+	=x\=sin(-4.7*pi); y\=0.5^(1/2); exp(y-x) 4.554537
+}
+
+::qcalculadora6-07::En una sola línia, assignau el nom $$x$$ al nombre $$\sin(-0.53\pi)\}\{\sqrt\{0.7\}\}\{e^\{3xy\}$$, el nom $$y$$ a $$#2$$ i calculau $$#3$$; separau les instruccions amb punts i comes seguits d'un espai en blanc. A continuació, separat per un espai en blanc (sense punt i coma), escriviu el resultat que ha donat R en avaluar aquesta seqüència d'instruccions. {
+	=x\=sin(-0.53*pi); y\=sqrt(0.7); exp(3*x*y) 0.08218022
+	=x\=sin(-0.53*pi); y\=0.7^(1/2); exp(3*x*y) 0.08218022
+}
+
+::qcalculadora6-08::En una sola línia, assignau el nom $$x$$ al nombre $$\cos(4.2\pi\}\{\sqrt\{7\}\}\{e^\{2x-y\}$$, el nom $$y$$ a $$#2$$ i calculau $$#3$$; separau les instruccions amb punts i comes seguits d'un espai en blanc. A continuació, separat per un espai en blanc (sense punt i coma), escriviu el resultat que ha donat R en avaluar aquesta seqüència d'instruccions. {
+	=x\=cos(4.2*pi); y\=sqrt(7); exp(2*x-y) 0.3578228
+	=x\=cos(4.2*pi); y\=7^(1/2); exp(2*x-y) 0.3578228
+}
+
+::qcalculadora6-09::En una sola línia, assignau el nom $$x$$ al nombre $$\sin(7.3\pi)\}\{\sqrt\{2.3\}\}\{e^\{x-2y\}$$, el nom $$y$$ a $$#2$$ i calculau $$#3$$; separau les instruccions amb punts i comes seguits d'un espai en blanc. A continuació, separat per un espai en blanc (sense punt i coma), escriviu el resultat que ha donat R en avaluar aquesta seqüència d'instruccions. {
+	=x\=sin(7.3*pi); y\=sqrt(2.3); exp(x-2*y) 0.02144707
+	=x\=sin(7.3*pi); y\=2.3^(1/2); exp(x-2*y) 0.02144707
+}
+
+$CATEGORY: La calculadora/qcalculadora5
+
+::qcalculadora5-01::Donau una expressió per calcular $$\sin(0.23\pi)\}\{2$$ arrodonint-lo  a #2 xifres decimals i a  continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=round(sin(0.23*pi),2) 0.66
+}
+
+::qcalculadora5-02::Donau una expressió per calcular $$\ln(2^3)\}\{2$$ arrodonint-lo  a #2 xifres decimals i a  continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=round(log(2^3),2) 2.08
+}
+
+::qcalculadora5-03::Donau una expressió per calcular $$\arctan(e^3)\}\{2$$ arrodonint-lo  a #2 xifres decimals i a  continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=round(atan(exp(3)),2) 1.52
+}
+
+::qcalculadora5-04::Donau una expressió per calcular $$\tan(0.78\pi)\}\{3$$ arrodonint-lo  a #2 xifres decimals i a  continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=round(tan(0.78*pi),3) -0.827
+}
+
+::qcalculadora5-05::Donau una expressió per calcular $$\ln(5^\{3\})\}\{3$$ arrodonint-lo  a #2 xifres decimals i a  continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=round(log(5^3),3) 4.828
+}
+
+::qcalculadora5-06::Donau una expressió per calcular $$\cos(0.73\pi)\}\{4$$ arrodonint-lo  a #2 xifres decimals i a  continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=round(cos(0.73*pi),4) -0.6613
+}
+
+::qcalculadora5-07::Donau una expressió per calcular $$\log_2(5!)\}\{4$$ arrodonint-lo  a #2 xifres decimals i a  continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=round(log(factorial(5),2),4) 6.9069
+}
+
+::qcalculadora5-08::Donau una expressió per calcular $$\arcsin(e^\{-1\})\}\{4$$ arrodonint-lo  a #2 xifres decimals i a  continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=round(asin(exp(-1)),4) 0.3767
+}
+
+$CATEGORY: La calculadora/qcalculadora4
+
+::qcalculadora4-01::Donau una expressió per calcular $$5\pi-2e$$,  amb les operacions escrites exactament en l'ordre donat,  i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=5*pi-2*exp(1) 10.2714
+}
+
+::qcalculadora4-02::Donau una expressió per calcular $$3^e-e^3$$,  amb les operacions escrites exactament en l'ordre donat,  i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=e^exp(1)-exp(3) -0.2725462
+}
+
+::qcalculadora4-03::Donau una expressió per calcular $$e\cdot \pi^2$$,  amb les operacions escrites exactament en l'ordre donat,  i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=exp(1)*pi^2 26.82837
+}
+
+::qcalculadora4-04::Donau una expressió per calcular $$8\pi^2+3e$$,  amb les operacions escrites exactament en l'ordre donat,  i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=8*pi^2+3*exp(1) 87.11168
+}
+
+::qcalculadora4-05::Donau una expressió per calcular $$8\pi^3+5e$$,  amb les operacions escrites exactament en l'ordre donat,  i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=8*pi^3+5*exp(1) 261.6416
+}
+
+::qcalculadora4-06::Donau una expressió per calcular $$5e-\sqrt\{\pi\}$$,  amb les operacions escrites exactament en l'ordre donat,  i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=5*exp(1)-sqrt(pi) 11.81896
+	=5*exp(1)-pi^(1/2) 11.81896
+}
+
+::qcalculadora4-07::Donau una expressió per calcular $$3e-\frac\{2\}\{\pi\}$$,  amb les operacions escrites exactament en l'ordre donat,  i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=3*exp(1)-2/pi 7.518226
+}
+
+::qcalculadora4-08::Donau una expressió per calcular $$(e/\pi)^2$$,  amb les operacions escrites exactament en l'ordre donat,  i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la. {
+	=(exp(1)/pi)^2
+}
+

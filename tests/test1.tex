@@ -1,0 +1,369 @@
+\documentclass[10pt]{article}
+\usepackage{amsfonts,amssymb,amsmath,amsthm,enumerate,graphicx,fancyvrb}
+\usepackage[utf8]{inputenc}
+\usepackage[catalan]{babel}
+\usepackage[T1]{fontenc}        
+
+\advance\hoffset by -0.8in
+\advance\textwidth by 1.7in
+\advance\voffset by -0.3in
+\advance\textheight by 0.6in
+\parskip= 1 ex
+\parindent = 0pt
+\baselineskip= 13pt
+
+\newcommand{\answer}{\textbf{Resposta: }}
+\newcommand{\titletest}[1]{\centerline{\Large\textbf{#1}}\medskip}
+\newcommand{\timetest}[1]{\noindent\textbf{Temps:} #1 minuts}
+\newcommand{\questionstest}{\noindent\textbf{Qüestions: }}
+\newcommand{\adaptativetest}{\noindent\textbf{Mode adaptatiu: }}
+\newcommand{\newquestion}[2]{\noindent\textbf{Qüestió: }\emph{#1} \textbf{Tipus: }\emph{#2}\medskip}
+\newenvironment{introtest}{}{\newpage}
+\newcommand{\transw}{\hspace*{1cm} Vertadera}
+
+%\resp->\answer{\verb
+
+\begin{document}
+\begin{introtest}
+\titletest{La calculadora}
+
+Heu d'entrar les respostes sense deixar cap espai en blanc excepte els que es demanin explícitament. Els arguments de funcions trigonomètriques són en radians, excepte quan diem explícitament el contrari. Quan una cosa es pot fer de diverses maneres, mirau bé si als apunts diem que ho heu de fer d'una manera concreta.  Teniu un model de test amb les respostes correctes a la Lliçó 1, feu-lo abans i mirau bé la sintaxi de les respostes correctes.  
+
+\timetest{60}
+
+\questionstest qcalculadora1 qcalculadora2 qcalculadora3 qcalculadora4 qcalculadora5 qcalculadora6 qcalculadora7 qcalculadora8
+
+\adaptativetest Yes
+\end{introtest}
+
+\newquestion{qcalculadora1}{short answer} 
+\def\qcalculadora1#1{Donau una expressió per calcular $#1$,  amb les operacions escrites exactament en l'ordre donat, i a continuació, separat per un espai en blanc, copiau el resultat que ha donat R en avaluar-la.}
+
+\qcalculadora1{3(5+2.5)+3^{1.5}+7!-\frac{2}{3}}\\ 
+\answer{\verb?3*(5+2.5)+3^1.5+factorial(7)-2/3 5067.029?}\\
+
+\qcalculadora1{2.5-3(7!+1)+5\cdot 1.5^6}\\
+\answer{\verb?2.5-3*(factorial(7)+1)+5*1.5^6 -15063.55?}\\
+
+\qcalculadora1{\frac{5}{3}\cdot 2^5-7!+2^{10}}\\
+\answer{\verb?(5/3)*2^5-factorial(7)+2^10 -3962.667?}\\
+\answer{\verb?5/3*2^5-factorial(7)+2^10 -3962.667?}\\
+
+\qcalculadora1{1.5^{-3}-(2+(-1)^5)\frac{2^7}{7!}}\\
+\answer{\verb?1.5^(-3)-(2+(-1)^5)*2^7/factorial(7) 0.2708995?}\\
+\answer{\verb?1.5^(-3)-(2+(-1)^5)*(2^7/factorial(7)) 0.2708995?}\\
+
+\qcalculadora1{2(3^5+(-3)^{-5})-\frac{6!}{500}}\\
+\answer{\verb?2*(3^5+(-3)^(-5))-factorial(6)/500 484.5518?}\\
+
+\qcalculadora1{7^3-6!\cdot( \frac{3}{5+6!})}\\
+\answer{\verb?7^3-factorial(6)*(3/(5+factorial(6))) 340.0207?}\\
+\answer{\verb?7^3-factorial(6)*3/(5+factorial(6)) 340.0207?}\\
+
+\qcalculadora1{\frac{5}{234}+ 3(10!- 2^{10})}\\
+\answer{\verb?5/234+3*(factorial(10)-2^10) 10883328?}\\
+
+\qcalculadora1{2.5^{-3}-(2+(-1.5)^8)\frac{7!}{3^7}}\\
+\answer{\verb?2.5^(-3)-(2+(-1.5)^8)*factorial(7)/3^7 -63.60755?}\\
+\answer{\verb?2.5^(-3)-(2+(-1.5)^8)*(factorial(7)/3^7) -63.60755?}\\
+
+\newpage
+
+\newquestion{qcalculadora2}{short answer} 
+\def\qcalculadora2#1{Donau una expressió per calcular $#1$,  amb les operacions i funcions escrites exactament en l'ordre donat, i a continuació, separat per un espai en blanc, copiau el resultat que ha donat R en avaluar-la.}
+
+\qcalculadora2{\ln(|e^3-\sqrt[3]{300}|)}\\
+\answer{\verb?log(abs(exp(3)-300^(1/3))) 2.594598?}\\
+
+\qcalculadora2{\log_{10}(|\sin(e^2)|)}\\
+\answer{\verb?log10(abs(sin(exp(2)))) -0.04873295?}\\
+\answer{\verb?log(abs(sin(exp(2))),10) -0.04873295?}\\
+
+\qcalculadora2{e^{\arctan(5!)}}\\
+\answer{\verb?exp(atan(factorial(5))) 4.770558?}\\
+
+\qcalculadora2{\sqrt{|\sin(2)|+1}-\sqrt[3]{\sin(2)}}\\
+\answer{\verb?sqrt(abs(sin(2))+1)-sin(2)^(1/3) 0.4129706?}\\
+\answer{\verb?(abs(sin(2))+1)^(1/2)-sin(2)^(1/3) -0.01523177?}\\
+
+\qcalculadora2{4!\cdot \binom{7}{4}-e^5}\\
+\answer{\verb?factorial(4)*choose(7,4)-exp(5) 691.5868?}\\
+
+\qcalculadora2{\sin(\arccos(0.3))-\cos(\arcsin(0.3))}\\
+\answer{\verb?sin(acos(0.3))-cos(asin(0.3)) 0?}\\
+
+\qcalculadora2{\sqrt{|\log_{2}(e^{-0.7})|}}\\
+\answer{\verb?abs(log(exp(-0.7),2))^(1/2) 1.004931?}\\
+\answer{\verb?sqrt(abs(log(exp(-0.7),2)) 1.004931?}\\
+
+\qcalculadora2{\ln(|\arctan(e^5)|)}\\
+\answer{\verb?log(abs(atan(exp(5)))) 0.447284?}\\
+
+\newpage
+
+\newquestion{qcalculadora3}{short answer} 
+\def\qcalculadora3#1{Donau una expressió per calcular $#1$, emprant la construcció donada a les notes per calcular funcions trigonomètriques en graus, i a continuació, separat per un espai en blanc, copiau el resultat que ha donat R en avaluar-la.}
+
+\qcalculadora3{3\cos(50^{\mathrm{o}})}\\
+\answer{\verb?3*cos(50*pi/180) 1.928363?}\\
+
+\qcalculadora3{\cos(35^{\mathrm{o}})^2}\\
+\answer{\verb?cos(35*pi/180)^2 0.6710101?}\\
+
+\qcalculadora3{3\tan(50^{\mathrm{o}})}\\
+\answer{\verb?3*tan(50*pi/180) 3.575261?}\\
+
+\qcalculadora3{\tan(35^{\mathrm{o}})^2}\\
+\answer{\verb?tan(35*pi/180)^2 0.4902906?}\\
+
+\qcalculadora3{3\sin(50^{\mathrm{o}})}\\
+\answer{\verb?3*sin(50*pi/180) 2.298133?}\\
+
+\qcalculadora3{\sin(35^{\mathrm{o}})^2}\\
+\answer{\verb?sin(35*pi/180)^2 0.3289899?}\\
+
+\qcalculadora3{\sin(10^{\mathrm{o}})+\cos(10^{\mathrm{o}})}\\
+\answer{\verb?sin(10*pi/180)+cos(10*pi/180) 1.158456?}\\
+
+\qcalculadora3{3\cos(-50^{\mathrm{o}})}\\
+\answer{\verb?3*cos(-50*pi/180) 1.928363?}\\
+
+
+\newpage
+
+\newquestion{qcalculadora4}{short answer} 
+\def\qcalculadora4#1{Donau una expressió per calcular $#1$,  amb les operacions escrites exactament en l'ordre donat,  i a continuació, separat per un espai en blanc, el resultat que ha donat R en avaluar-la.}
+
+\qcalculadora4{5\pi-2e}\\
+\answer{\verb?5*pi-2*exp(1) 10.2714?}\\
+
+\qcalculadora4{3^e-e^3}\\
+\answer{\verb?3^exp(1)-exp(3) -0.2725462?}\\
+
+\qcalculadora4{e\cdot \pi^2}\\
+\answer{\verb?exp(1)*pi^2 26.82837?}\\
+
+\qcalculadora4{8\pi^2+3e}\\
+\answer{\verb?8*pi^2+3*exp(1) 87.11168?}\\
+
+\qcalculadora4{8\pi^3+5e}\\
+\answer{\verb?8*pi^3+5*exp(1) 261.6416?}\\
+
+\qcalculadora4{5e-\sqrt{\pi}}\\
+\answer{\verb?5*exp(1)-sqrt(pi) 11.81896?}\\
+\answer{\verb?5*exp(1)-pi^(1/2) 11.81896?}\\
+
+\qcalculadora4{3e-\frac{2}{\pi}}\\
+\answer{\verb?3*exp(1)-2/pi 7.518226?}\\
+
+\qcalculadora4{(e/\pi)^2}\\
+\answer{\verb?(exp(1)/pi)^2? 0.7486679}\\
+
+\newpage
+
+\newquestion{qcalculadora5}{short answer} 
+\def\qcalculadora5#1#2{Donau una expressió per calcular $#1$ arrodonint-lo  a #2 xifres decimals i a  continuació, separat per un espai en blanc, copiau el resultat que ha donat R en avaluar-la.}
+
+\qcalculadora5{\sin(0.23\pi)}{2}\\
+\answer{\verb?round(sin(0.23*pi),2) 0.66?}\\
+
+\qcalculadora5{\ln(2^3)}{2}\\
+\answer{\verb?round(log(2^3),2) 2.08?}\\
+
+\qcalculadora5{\arctan(e^3)}{2}\\
+\answer{\verb?round(atan(exp(3)),2) 1.52?}\\
+
+\qcalculadora5{\tan(0.78\pi)}{3}\\
+\answer{\verb?round(tan(0.78*pi),3) -0.827?}\\
+
+\qcalculadora5{\ln(5^{3})}{3}\\
+\answer{\verb?round(log(5^3),3) 4.828?}\\
+
+\qcalculadora5{\cos(0.73\pi)}{4}\\
+\answer{\verb?round(cos(0.73*pi),4) -0.6613?}\\
+
+\qcalculadora5{\log_2(5!)}{4}\\
+\answer{\verb?round(log(factorial(5),2),4) 6.9069?}\\
+
+\qcalculadora5{\arcsin(e^{-1})}{4}\\
+\answer{\verb?round(asin(exp(-1)),4) 0.3767?}\\
+
+\newpage
+
+\newquestion{qcalculadora6}{short answer} 
+\def\qcalculadora6#1#2#3{En una sola línia, assignau el nom $x$ al nombre $#1$, el nom $y$ a $#2$ i calculau $#3$; separau les instruccions amb punts i comes seguits d'un espai en blanc. A continuació, separat per un espai en blanc (sense punt i coma), copiau  el resultat que ha donat R en avaluar aquesta seqüència d'instruccions.}
+
+\qcalculadora6{\sin(0.63\pi)}{\sqrt{2}}{e^{x y}}\\
+\answer{\verb?x=sin(0.63*pi); y=sqrt(2); exp(x*y) 3.661603?}\\
+\answer{\verb?x=sin(0.63*pi); y=2^(1/2); exp(x*y) 3.661603?}\\
+
+\qcalculadora6{\cos(0.53\pi)}{\sqrt{3}}{e^{x+y}}\\
+\answer{\verb?x=cos(0.53*pi); y=sqrt(3); exp(x+y) 5.144574?}\\
+\answer{\verb?x=cos(0.53*pi); y=3^(1/2); exp(x+y) 5.144574?}\\
+
+\qcalculadora6{\cos(0.78\pi)}{\sqrt{0.2}}{e^{2x+y}}\\
+\answer{\verb?x=cos(0.78*pi); y=sqrt(0.2); exp(2*x+y) 0.334937?}\\
+\answer{\verb?x=cos(0.78*pi); y=0.2^(1/2); exp(2*x+y) 0.334937?}\\
+
+\qcalculadora6{\cos(-2.3\pi)}{\sqrt{0.3}}{e^{x+2y}}\\
+\answer{\verb?x=cos(-2.3*pi); y=sqrt(0.3); exp(x+2*y) 5.382917?}\\
+\answer{\verb?x=cos(-2.3*pi); y=0.3^(1/2); exp(x+2*y) 5.382917?}\\
+
+\qcalculadora6{\tan(-5.7\pi)}{\sqrt{5}}{e^{x-y}}\\
+\answer{\verb?x=tan(-5.7*pi); y=sqrt(5); exp(x-y) 0.4232950?}\\
+\answer{\verb?x=tan(-5.7*pi); y=5^(1/2); exp(x-y) 0.4232950?}\\
+
+\qcalculadora6{\sin(-4.7\pi)}{\sqrt{0.5}}{e^{y-x}}\\
+\answer{\verb?x=sin(-4.7*pi); y=sqrt(0.5); exp(y-x) 4.554537?}\\
+\answer{\verb?x=sin(-4.7*pi); y=0.5^(1/2); exp(y-x) 4.554537?}\\
+
+\qcalculadora6{\sin(-0.53\pi)}{\sqrt{0.7}}{e^{3xy}}\\
+\answer{\verb?x=sin(-0.53*pi); y=sqrt(0.7); exp(3*x*y) 0.08218022?}\\
+\answer{\verb?x=sin(-0.53*pi); y=0.7^(1/2); exp(3*x*y) 0.08218022?}\\
+
+\qcalculadora6{\cos(4.2\pi)}{\sqrt{7}}{e^{2x-y}}\\
+\answer{\verb?x=cos(4.2*pi); y=sqrt(7); exp(2*x-y) 0.3578228?}\\
+\answer{\verb?x=cos(4.2*pi); y=7^(1/2); exp(2*x-y) 0.3578228?}\\
+
+\qcalculadora6{\sin(7.3\pi)}{\sqrt{2.3}}{e^{x-2y}}\\
+\answer{\verb?x=sin(7.3*pi); y=sqrt(2.3); exp(x-2*y) 0.02144707?}\\
+\answer{\verb?x=sin(7.3*pi); y=2.3^(1/2); exp(x-2*y) 0.02144707?}\\
+
+\newpage
+
+\newquestion{qcalculadora7}{multiple choice as short answer} 
+\def\qcalculadora7{Digau quines de les paraules següents són noms correctes de variables en R, segons el que hem explicat als apunts de la lliçó 1. Heu de donar els números de les respostes correctes (ordenats, separats per espais en blanc, i sense els parèntesis); n'hi pot haver una, més d'una, o cap; si trobau que no n'hi ha cap, heu de donar el número de la resposta ``Cap d'elles''.}
+
+\qcalculadora7{
+\begin{enumerate}[(1)]
+\item\verb?llista.2?
+\item\verb?llista_2? 
+\item\verb?2llista? 
+\item\verb?llistadós?
+\item\verb?2.llista? 
+\item\verb?sqrt?
+\item\verb?Cap d'elles?
+\end{enumerate}}
+\answer{\verb?1 6?}\\
+
+
+\qcalculadora7{
+\begin{enumerate}[(1)]
+\item\verb?llista%3?  
+\item\verb?3llista? 
+\item\verb?llistatrés?
+\item\verb?llistav0.3? 
+\item\verb?llista 3? 
+\item\verb?log?
+\item\verb?Cap d'elles?
+\end{enumerate}}
+\answer{\verb?4 6?}\\
+
+
+\qcalculadora7{
+\begin{enumerate}[(1)]
+\item \verb?llista.pobles? 
+\item\verb?llista_pobles? 
+\item\verb?llistadepobles? 
+\item\verb?llista de pobles?
+\item\verb?llista(pobles)?
+\item\verb?llista.poblesplà?
+\item\verb?Cap d'elles?
+\end{enumerate}}
+\answer{\verb?1 3?}\\
+
+
+\qcalculadora7{
+\begin{enumerate}[(1)]
+\item \verb?llista%noms? 
+\item\verb?llista.de.noms?
+\item\verb?llista de noms? 
+\item\verb?exp?
+\item\verb?Adrià?
+\item\verb?1.noms?
+\item\verb?Cap d'elles?
+\end{enumerate}}
+\answer{\verb?2 4?}\\
+
+
+\qcalculadora7{
+\begin{enumerate}[(1)]
+\item \verb?llista%3? 
+\item\verb?llista 3? 
+\item\verb?llista.v.1.0.3?
+\item\verb?llista..3?
+\item\verb?3.llista?
+\item\verb?llista.número.tres? 
+\item\verb?Cap d'elles?
+\end{enumerate}}
+\answer{\verb?3 4?}\\
+
+
+\qcalculadora7{
+\begin{enumerate}[(1)]
+\item\verb?noms.i.llinatges?
+\item\verb?noms-i-llinatges?
+\item\verb?noms i llinatges? 
+\item\verb?3.noms.llinatges?
+\item\verb?Búger? 
+\item\verb?log10?
+\item\verb?Cap d'elles?
+\end{enumerate}}
+\answer{\verb?1 6?}\\
+
+
+\qcalculadora7{
+\begin{enumerate}[(1)]
+\item\verb?llista_pacients?
+\item\verb?llista-pacients?
+\item\verb?llista&pacients? 
+\item\verb?llista~pacients?
+\item\verb?llista de pacients? 
+\item\verb?llista.paciència?
+\item\verb?Cap d'elles?
+\end{enumerate}}
+\answer{\verb?7?}\\
+
+\qcalculadora7{
+\begin{enumerate}[(1)]
+\item\verb?llista_llarga?
+\item\verb?llista*llarga? 
+\item \verb?llista.llarga?
+\item\verb?1.llista.llarga?
+\item\verb?llista.número.56? 
+\item\verb?choose?
+\item\verb?Cap d'elles?
+\end{enumerate}}
+\answer{\verb?3 6?}\\
+
+
+\newpage
+
+\newquestion{qcalculadora8}{short answer} 
+\def\qcalculadora8#1{Donau una expressió per calcular $#1$,  amb les operacions escrites exactament en l'ordre donat,  i a continuació, separat per un espai en blanc, copiau el resultat que ha donat R en avaluar-la.}
+
+\qcalculadora8{(5-3i)(8+i)^2}\\
+\answer{\verb?(5-3i)*(8+1i)^2 363-109i?}\\
+
+\qcalculadora8{(5-i)^{10}}\\
+\answer{\verb?(5-1i)^10 -4661376-10928800i?}\\
+
+\qcalculadora8{(5-3i)/(7+i)}\\
+\answer{\verb?(5-3i)/(7+1i) 0.64-0.52i?}\\
+
+\qcalculadora8{(4+i)(3-2i)^3}\\
+\answer{\verb?(4+1i)*(3-2i)^3 10-193i?}\\
+
+\qcalculadora8{(1+2i)^2+(2+i)^2}\\
+\answer{\verb?(1+2i)^2+(2+1i)^2  0+8i?}\\
+
+\qcalculadora8{2.5/(1.5-i)^2}\\
+\answer{\verb?2.5/(1.5-1i)^2 0.295858+0.7100592i?}\\
+
+\qcalculadora8{(3+i)^2-(8-3i)}\\
+\answer{\verb?(3+1i)^2-(8-3i) 0+9i?}\\
+
+\qcalculadora8{(2-i)^2(3+5i)^3}\\
+\answer{\verb?(2-1i)^2*(3+5i)^3 -554+822i?}\\
+
+\end{document}
