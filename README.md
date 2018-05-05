@@ -7,16 +7,30 @@ An e-learning tool developed in Python, that helps groups of students learn the 
 
 ### LaTeX Special document formatted
 
-For this tool works needs put some "special" sections into your document, like this:
+For this tool works needs put some "special" sections into your document with pre-declared commands at the document header:
+```
+\newcommand{\answer}{\textbf{Resposta: }}
+\newcommand{\titletest}[1]{\centerline{\Large\textbf{#1}}\medskip}
+\newcommand{\timetest}[1]{\noindent\textbf{Temps:} #1 minuts}
+\newcommand{\questionstest}{\noindent\textbf{Qüestions: }}
+\newcommand{\adaptativetest}{\noindent\textbf{Mode adaptatiu: }}
+\newcommand{\newquestion}[2]{\noindent\textbf{Qüestió: }\emph{#1} \textbf{Tipus: }\emph{#2}\medskip}
+\newenvironment{introtest}{}{\newpage}
+\newcommand{\transw}{\hspace*{1cm} Vertadera}
+\newcommand{\namequestion}{}
+```
+
+And use, like this:
 
 ```
 \begin{introtest}
-   \titletest(<title>)
-   \adaptativetest(<YES|NO>)
-   \timetest(<time>)
+   \titletest <title> 
+   \adaptativetest <YES|NO>
+   \timetest <time> 
 \end{introtest}
   
-\newquestion
+\namequestion{qintr1-01}
+\qintro1{la funció exp}\\ 
+\answer{\verb?help("exp") log?}\\
 
-\newquestion
 ```
